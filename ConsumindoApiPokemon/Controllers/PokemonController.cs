@@ -21,13 +21,6 @@ namespace ConsumindoApiPokemon.Controllers
     [ApiController, Route("[controller]")]
     public class PokemonController : ControllerBase
     {
-        string mens = string.Empty;
-
-        private static readonly string[] Summaries = new[]
-        {
-            "Charmander", "Squirtle", "Caterpie", "Weedle", "Pidgey", "Pidgeotto", "Rattata", "Spearow", "Fearow", "Arbok", "Pikachu", "Sandshrew"
-        };
-
         private readonly ILogger<PokemonController> _logger;
 
         public PokemonController(ILogger<PokemonController> logger)
